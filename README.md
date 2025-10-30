@@ -1,8 +1,8 @@
-# SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching With Interactive Swin Transformer
+# SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching with Interactive Swin Transformer
 
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
-The code is scheduled to be uploaded in the coming weeks.
+The code is scheduled to be uploaded after this period of time.
 
 ## Citation
 ```bibtex
