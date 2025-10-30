@@ -2,7 +2,7 @@
 
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
-The code is scheduled to be uploaded after this period of time.
+The code is scheduled to be uploaded in the coming weeks.
 
 ## Citation
 ```bibtex
