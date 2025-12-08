@@ -7,10 +7,12 @@ The code is scheduled to be uploaded in the coming weeks.
 ## Citation
 ```bibtex
 @article{li2025swinmatcher,
-  title={SwinMatcher: Universal Cross-Modal Remote Sensing Image Matching with Interactive Swin Transformer},
+  title={{SwinMatcher}: Universal Cross-Modal Remote Sensing Image Matching with Interactive Swin Transformer},
   author={Li, Wei and Weng, Desheng and Gao, Chenzhong and Du, Qian},
   journal={IEEE Transactions on Geoscience and Remote Sensing},
   year={2025},
+  volume={63},
+  pages={1-16},
   publisher={IEEE}
 }
 ```
