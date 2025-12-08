@@ -2,7 +2,7 @@
 
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
-*The authors are busy job hunting for now, causing a delay of codes working. The algorithm and datasets will be fully open-source very soon.*
+*The authors are busy job hunting for now, causing a delay of codes working. The algorithm will be fully open-source very soon.*
 
 
 ## 📦 Datasets Release
