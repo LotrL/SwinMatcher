@@ -45,7 +45,7 @@ if __name__ == "__main__":
     half_precision = True  # default: False
 
     matcher = SwinMatcher(config=config)
-    matcher.load_state_dict(torch.load("weights/swinmatcher.ckpt")["state_dict"])
+    matcher.load_state_dict(torch.load("weights/swinmatcher_512.ckpt")["state_dict"])
     matcher = matcher.eval().cuda()
     if half_precision:
         matcher = matcher.half()
@@ -109,3 +109,4 @@ if __name__ == "__main__":
     plt.title(f"{len(matched_points0)} matches")
     plt.axis("off")
     plt.show()
+
