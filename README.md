@@ -3,9 +3,11 @@
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
 
-## 📦 Model Weights
+## 💾 Model Weights
 
-Create a new folder named "weights" in the home directory, and place the model weights inside this folder.
+Google Drive: 
+
+Baidu Netdisk: https://pan.baidu.com/s/1Thzdd-sqFNOqXBD10KYBnA?pwd=swin
 
 
 ## 📦 Datasets Release
