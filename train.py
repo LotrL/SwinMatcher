@@ -41,7 +41,7 @@ def parse_args():
         '--data_cfg_path', type=str, default='/root/my_project/SwinMatcher/configs/multi_modality_512.py',
         help='data config path')
     parser.add_argument(
-        '--main_cfg_path', type=str, default='/root/my_project/SwinMatcher/configs/loftr_ds.py',
+        '--main_cfg_path', type=str, default='/root/my_project/SwinMatcher/configs/swinmatcher_ds.py',
         help='main config path')
     parser.add_argument(
         '--exp_name', type=str, default='SwinFTR_v8')
