@@ -7,7 +7,7 @@ Tip: You may want to check out another method [\[Link\]](https://github.com/Lotr
 
 ## 💾 Model Weights
 
-Google Drive: https://drive.google.com/drive/folders/1R4u8TBHzcv8dM1vTRyKwFxS7dCeAd31q?usp=drive_link
+Google Drive: https://drive.google.com/drive/folders/1bpHc09QDIr3idgPMNupS30NeLzGuqjh-?usp=drive_link
 
 Baidu Netdisk: https://pan.baidu.com/s/1Thzdd-sqFNOqXBD10KYBnA?pwd=swin
 
