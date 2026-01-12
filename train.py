@@ -13,11 +13,11 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
 from pytorch_lightning.plugins import DDPPlugin
 
-from src.config.default_new import get_cfg_defaults
+from src.config.default import get_cfg_defaults
 from src.utils.misc import get_rank_zero_only_logger, setup_gpus
 from src.utils.profiler import build_profiler
-from src.lightning.data_new import MultiSceneDataModule
-from src.lightning.lightning_loftr_new import PL_SwinFTR
+from src.lightning.data import MultiSceneDataModule
+from src.lightning.lightning_swinmatcher import PL_SwinMatcher
 
 loguru_logger = get_rank_zero_only_logger(loguru_logger)
 
@@ -44,7 +44,7 @@ def parse_args():
         '--main_cfg_path', type=str, default='/root/my_project/SwinMatcher/configs/swinmatcher_ds.py',
         help='main config path')
     parser.add_argument(
-        '--exp_name', type=str, default='SwinFTR_v8')
+        '--exp_name', type=str, default='SwinMatcher')
     parser.add_argument(
         '--batch_size', type=int, default=2, help='batch_size per gpu')
     parser.add_argument(
@@ -54,7 +54,7 @@ def parse_args():
         nargs='?', default=True, help='whether loading data to pinned memory or not')
     parser.add_argument(
         '--ckpt_path', type=str, default=None,
-        help='pretrained checkpoint path, helpful for using a pre-trained coarse-only LoFTR')
+        help='pretrained checkpoint path, helpful for using a pre-trained coarse-only SwinMatcher')
     parser.add_argument(
         '--disable_ckpt', action='store_true',
         help='disable checkpoint saving (useful for debugging).')
@@ -103,12 +103,12 @@ def main():
 
     # lightning module
     profiler = build_profiler(args.profiler_name)
-    model = PL_SwinFTR(config, pretrained_ckpt=args.ckpt_path, profiler=profiler)
-    loguru_logger.info(f"LoFTR LightningModule initialized!")
+    model = PL_SwinMatcher(config, pretrained_ckpt=args.ckpt_path, profiler=profiler)
+    loguru_logger.info(f"SwinMatcher LightningModule initialized!")
 
     # lightning data
     data_module = MultiSceneDataModule(args, config)
-    loguru_logger.info(f"LoFTR DataModule initialized!")
+    loguru_logger.info(f"SwinMatcher DataModule initialized!")
 
     # TensorBoard Logger
     logger = TensorBoardLogger(save_dir='/root/autodl-tmp/SwinMatcher_weights', name=args.exp_name, default_hp_metric=False)
