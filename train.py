@@ -136,7 +136,7 @@ def main():
         reload_dataloaders_every_epoch=False,  # avoid repeated samples!
         weights_summary='full',
         profiler=profiler,
-        max_epochs=20)  # set the max number of epoch
+        max_epochs=30)  # set the max number of epoch
     loguru_logger.info(f"Trainer initialized!")
     loguru_logger.info(f"Start training!")
     trainer.fit(model, datamodule=data_module)
