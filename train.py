@@ -92,11 +92,11 @@ def main():
     config.TRAINER.TRUE_LR = config.TRAINER.CANONICAL_LR * _scaling
     # config.TRAINER.WARMUP_STEP = math.floor(config.TRAINER.WARMUP_STEP / _scaling)
 
-    # pretrain
+    # ----- pretrain -----
     config.TRAINER.WARMUP_STEP = 3590 * 5  # step_number_per_epoch * epoch_number
     config.TRAINER.MSLR_MILESTONES = [10, 15, 20, 25]
 
-    # finetune
+    # ----- finetune -----
     # config.TRAINER.TRUE_LR /= 4
     # config.TRAINER.WARMUP_STEP = 0
     # config.TRAINER.MSLR_MILESTONES = [4, 8, 12, 16]
