@@ -2,6 +2,8 @@
 
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
+You can also check out our other method, which offers better performance.
+
 
 ## 💾 Model Weights
 
