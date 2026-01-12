@@ -2,7 +2,7 @@
 
 Paper Link: https://ieeexplore.ieee.org/document/11095750
 
-Tip: You may want to check out [another method](https://github.com/LotrL/DGIM) which offers better performance.
+Tip: You may want to check out another method [\[Link\]](https://github.com/LotrL/DGIM) which offers better performance.
 
 
 ## 💾 Model Weights
