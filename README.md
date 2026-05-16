@@ -20,7 +20,7 @@ Baidu Netdisk: https://pan.baidu.com/s/1Thzdd-sqFNOqXBD10KYBnA?pwd=swin
 
 Google Drive: https://drive.google.com/drive/folders/1sMWudiDA2u7STSZuzm0Pg0IxtzNyYkeq?usp=sharing
 
-Baidu Netdisk: https://pan.baidu.com/s/1jtLJpzS-PvJDvDrxT2uWgw?pwd=1hup
+Baidu Netdisk: https://pan.baidu.com/s/1eZ3wjIBBCAs0FgGgvpniMA?pwd=bit6
 
 
 *** Testing dataset ***
